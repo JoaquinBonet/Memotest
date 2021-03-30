@@ -90,7 +90,7 @@ function encontrarMatch(){
   var imagenDeAnimal2 = secuenciaClicks[1].getElementsByClassName("reverso")[0].src
   let $click1 = secuenciaClicks[0]
   let $click2 = secuenciaClicks[1]
-  if (imagenDeAnimal1 === imagenDeAnimal2 ){
+  if (imagenDeAnimal1 === imagenDeAnimal2 && $click1 !== $click2){
    
     setTimeout(function(){$click1.className = "oculto"
     $click2.className = "oculto", ganar();}, 500);
@@ -104,6 +104,9 @@ function encontrarMatch(){
     secuenciaClicks.pop()
     secuenciaClicks.pop()
     sumarIntento();
+    } else if (imagenDeAnimal1 === imagenDeAnimal2 && $click1 === $click2){
+        secuenciaClicks.pop()
+        secuenciaClicks.pop()
     }
  
     
