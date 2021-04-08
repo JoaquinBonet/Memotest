@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^4.6.0",
+    "har-validator": "^5.1.5"
+  },
+  "devDependencies": {
+    "cypress": "^6.8.0"
   }
 }
