@@ -1,3 +1,7 @@
+body {
+    background: radial-gradient(circle, #fff, #edf);
+    
+}
 
 .flip-card {
     background-color: transparent;
@@ -32,4 +36,16 @@
 
 .oculto{
     display: none
+}
+
+b {
+
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.alert {
+    font-family:Georgia;
+    font-size: 30px;
+  
 }

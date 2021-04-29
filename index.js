@@ -84,6 +84,7 @@ function encontrarMatch(){
         $segundaCarta.className = "oculto", ganar();}, 500);
         secuenciaClicks.pop();
         secuenciaClicks.pop();
+        
     }
     else if (imagenDeAnimal1 !== imagenDeAnimal2){
              
@@ -91,13 +92,13 @@ function encontrarMatch(){
         $segundaCarta.style.transform = "rotateY(0deg)"}, 500);
         secuenciaClicks.pop();
         secuenciaClicks.pop();
-        sumarIntento();
+        
     }
     else if (imagenDeAnimal1 === imagenDeAnimal2 && $primeraCarta === $segundaCarta){
         secuenciaClicks.pop();
         secuenciaClicks.pop();
     }
- 
+    sumarIntento();
     
 };
 
@@ -106,7 +107,7 @@ function encontrarMatch(){
 
 function ganar(){
     if (document.querySelectorAll(".oculto").length === document.querySelectorAll(".flip-card").length){ 
-        document.querySelector("#victoria").innerText = "GANASTE, FELICITACIONES!";
+        document.querySelector("#victoria").innerText = `Ganaste, felicitaciones! Tardaste ${document.querySelector("#intento").innerText} intentos.` ;
 
     }
 
